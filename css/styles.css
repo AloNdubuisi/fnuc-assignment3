@@ -1,0 +1,80 @@
+/* General Table Styling */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  vertical-align: top;
+}
+/* Top Header Cell */
+.header {
+  background-color: #fff2cc;
+  height: 50px;
+  width: 100%;
+}
+/* Left Cell for Items */
+.left-cell {
+  background-color: #ffffcc;
+  width: 50%;
+  font-size: 24pt;
+  font-style: italic;
+}
+.left-cell ul {
+  list-style-type: none;
+  padding: 0;
+}
+.left-cell li {
+  margin: 5px 0;
+}
+.left-cell li::before {
+  content: "• ";
+  font-weight: bold;
+}
+/* Right Cell with Image and Description */
+.right-cell {
+  background-color: #ffffe0;
+  width: 50%;
+  font-size: 10pt;
+}
+.right-cell img {
+  float: left;
+  margin: 5px;
+  max-width: 180px;
+  height: 400px;
+}
+.right-cell p {
+  margin: 5px 0;
+}
+.right-cell a {
+  color: blue;
+  text-decoration: underline;
+}
+/* Bottom Footer Cell */
+.footer {
+  background-color: #ffd966;
+  height: 75px;
+  width: 100%;
+}
+/* Media query for Responsivenes */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .main-content img {
+      float: none;
+      margin-right: 0;
+      width: 100%;
+  }
+}
